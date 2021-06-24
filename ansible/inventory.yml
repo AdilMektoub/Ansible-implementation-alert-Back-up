@@ -1,0 +1,9 @@
+all:
+  vars:
+    ansible_connection: ssh
+    ansible_user: "{{SSH_USER}}"
+    ansible_ssh_pass: "{{SSH_PASSWORD}}"
+  children:
+    T-NSA-800:
+      hosts:
+        192.168.5.6: 

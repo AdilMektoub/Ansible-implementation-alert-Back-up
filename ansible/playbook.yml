@@ -1,0 +1,5 @@
+- name: Install and initialize server T-NSA-800
+  hosts: T-NSA-800
+  roles:
+    - role: T-NSA-800
+      become: yes
